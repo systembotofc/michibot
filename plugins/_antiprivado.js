@@ -1,22 +1,36 @@
-const comandos = /piedra|papel|tijera|estado|verificar|code|jadibot --code|--code|creadora|bottemporal|grupos|instalarbot|términos|bots|deletebot|eliminarsesion|serbot|verify|register|registrar|reg|reg1|nombre|name|nombre2|name2|edad|age|edad2|age2|genero|género|gender|identidad|pasatiempo|hobby|identify|finalizar|pas2|pas3|pas4|pas5|registroc|deletesesion|registror|jadibot/i
+export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) {
+  if (m.isBaileys && m.fromMe) return !0;
+  if (m.isGroup) return !1;
+  if (!m.message) return !0;
+  if (m.text.includes('PIEDRA') || m.text.includes('PAPEL') || m.text.includes('TIJERA') || m.text.includes('serbot') || m.text.includes('jadibot')) return !0;
+  const chat = global.db.data.chats[m.chat];
+  const user = global.db.data.users[m.sender];
+  const bot = global.db.data.settings[this.user.jid] || {};
+//INICIO lineas por Kurt18
+const fechaActual = new Date();
+const fechaActualNum = Date.UTC(
+    fechaActual.getFullYear(),
+    fechaActual.getMonth(),
+    fechaActual.getDate()
+);
+let q = m.quoted ? m.quoted : m;
+let mime = (q.msg || q).mimetype || q.mediaType || "";
 
-let handler = m => m
-handler.before = async function (m, { conn, isOwner, isROwner }) {
-if (m.fromMe) return !0
-if (m.isGroup) return !1
-if (!m.message) return !0
-const regexWithPrefix = new RegExp(`^${prefix.source}\\s?${comandos.source}`, 'i')
-if (regexWithPrefix.test(m.text.toLowerCase().trim())) return !0
+let horaActualNum = Date.now();
+const intervaloEsperado = 1 * 60 * 60 * 1000; // 1 hora en milisegundos
+let tiempoTranscurrido = horaActualNum - user.fechaUltimoMsjInbox;
 
-let chat, user, bot, mensaje
-chat = global.db.data.chats[m.chat]
-user = global.db.data.users[m.sender]
-bot = global.db.data.settings[this.user.jid] || {}
+console.log(`user.fechaUltimoMsjInbox >${user.fechaUltimoMsjInbox}<`); //Luego comentar
+console.log(`horaActualNum >${horaActualNum}<`); //Luego comentar
+console.log(`tiempoTranscurrido >${tiempoTranscurrido}<`); //Luego comentar
 
-if (bot.antiPrivate && !isOwner && !isROwner) {
-return await conn.reply(m.chat, mid.mAdvertencia + mid.smsprivado(m, cuentas), m, { mentions: [m.sender] })  
-await this.updateBlockStatus(m.sender, 'block')
+if (tiempoTranscurrido >= intervaloEsperado) {
+   await m.reply(`*`🐱Hola @${m.sender.split`@`[0]}, bienvenido al chatbot de MichiBot🐱`*\n> Soy el asistente virtual de Geri, y estare a cargo de atenderte hoy\n\n*En esta ocasion tenemos a la venta:*\n🤖Bot de etiquetas\n📝Bot personalizado\n📨APK de spam\n🎶APK de Spotify premium`, false, {mentions: [m.sender]});
+    user.fechaUltimoMsjInbox = horaActualNum;
+    return;
 }
-return !1
-}
-export default handler
+//user.fechaUltimoMsjInbox = 0; //test (luego eliminar)
+//FIN lineas por Kurt18
+
+  return !1;
+                  }
