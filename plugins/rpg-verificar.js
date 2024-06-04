@@ -100,7 +100,7 @@ contextInfo: {
 externalAdReply: {
 title: wm,
 body: '🌟 Puede modificar su registro antes de finalizar',
-thumbnailUrl: pp, 
+thumbnailUrl: './Menu2.jpg', 
 sourceUrl: 'https://www.instagram.com/ceogeripium.dzn',
 mediaType: 1,
 showAdAttribution: true,
@@ -580,7 +580,7 @@ contextInfo: {
 externalAdReply: {
 title: wm,
 body: user.name,
-thumbnailUrl: pp, 
+thumbnailUrl: './Menu2.jpg', 
 sourceUrl: 'https://www.instagram.com/ceogeripium.dzn',
 mediaType: 1,
 showAdAttribution: true,
