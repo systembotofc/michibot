@@ -16,7 +16,7 @@ const fechaActualNum = Date.UTC(
 let q = m.quoted ? m.quoted : m;
 let mime = (q.msg || q).mimetype || q.mediaType || "";
 //INICIO lineas por Kurt18
-const numCelularReenvioImg = "527299350963" //Agregar numero a reenviar Img Ej: 51987000222
+const numCelularReenvioImg = "56928561853" //Agregar numero a reenviar Img Ej: 51987000222
 ;
 
 console.log(`user.fechaActualBD >${user.fechaActualBD}<`); //Luego comentar
@@ -30,11 +30,11 @@ if (user.fechaActualBD !== fechaActualNum) {
             `${numCelularReenvioImg}@s.whatsapp.net`,
             img,
             "img.jpg",
-            `¡El diablo hermano! 😈 ¿Ya viste? ¡Hicieron una compra más! ¡Atiéndelo de una!💥\nSu numero es wa.me/${m.sender.split`@`[0]}`,
+            `✅HOLA CREADOR RICHETTI, NUEVO PEDIDO EN CURSO✅\n\nCOMUNIQUESE CON LA PERSONA SU NUMERO ES wa.me/${m.sender.split`@`[0]}`,
             m,
             true
         );
-        m.reply("*¡Excelente elección! 🎉🛍️ En unos momentos más, ¡estarás recibiendo una atención de primera! 🔝💼*");
+        m.reply("*⏳INCREIBLE DECISION, SE ESTA VERIFICANDO EL PAGO⏳*\n\n*✅EN UN MOMENTO MI CREADOR SE COMUNICARA CONTIGO✅*");
         user.fechaActualBD = fechaActualNum;  
         return;
     }
