@@ -3,7 +3,7 @@ import Spotify from "spotifydl-x"
 import fs from 'fs'
 let handler = async(m, { conn, usedPrefix, command, text }) => {
 let frep = { contextInfo: { externalAdReply: {title: wm, body: author, sourceUrl: redesMenu, thumbnail: await(await fetch(gataMenu)).buffer() }}}
-if (!text) return await conn.reply(m.chat, `${lenguajeGB.smsMalused2()} ⊱ *${usedPrefix + command} Bellyache*`, fkontak, m) 
+if (!text) return await conn.reply(m.chat, `${lenguajeGB.smsMalused2()} ⊱ *${usedPrefix + command} Feid*`, fkontak, m) 
 try {
 const { key } = await conn.sendMessage(m.chat, {text: wait}, {quoted: fkontak});
 await conn.sendMessage(m.chat, {text: waitt, edit: key});
