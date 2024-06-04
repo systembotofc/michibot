@@ -120,12 +120,12 @@ sections: [
 rows: [
 { header: "✅ Redes", title: "🔓 Para: Todos", description: "Infórmate por medios oficiales sobre MichiBot", id: usedPrefix + "cuentasgb" },
 { header: "📢 Grupos/Canales", title: "🔓 Para: Todos", description: "¡Te esperamos!", id: usedPrefix + "grupos" },
-{ header: "💸 Comprar", title: "🔓 Para: Todos", description: "MichiBot se mantiene funcionando gracias a que lo compran, tu tambien puedes adquirirlo", id: usedPrefix + "comprar" }
+{ header: "💸 Comprar", title: "🔓 Para: Todos", description: "MichiBot se mantiene funcionando gracias a que lo compran, tu tambien puedes adquirirlo", id: usedPrefix + "adquirir" }
 ]},
 { title: "🔖 Atajos", highlight_label: "Nuevo",
 rows: [
-{ header: "🎧 Youtube play", title: "🔓 Para: Todos", description: "Descarga canciones de youtube al momento", id: usedPrefix + "play" },
 { header: "🤫 Mutear", title: "🔐 Para: Admins", description: "Silencia a alguien en el grupo(el bot le borrara todos los mensajes)", id: usedPrefix + "mute" },
+{ header: "🎧 Youtube play", title: "🔓 Para: Todos", description: "Descarga canciones de youtube al momento", id: usedPrefix + "play" },
 { header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Selecciona esto si deseas saber la rapidez del bot", id: usedPrefix + "ping" },
 { header: "🥺​ Desmutear", title: "🔐 Para: Admins", description: "Quita el silencio a alguien del grupo(ya no le borrara mensajes)", id: usedPrefix + "unmute" }
 ]},
