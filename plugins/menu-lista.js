@@ -113,21 +113,21 @@ let menu = `
 ⊜ *Tokens ➟* ${joincount} 🪙`.trim()
       
 const buttonParamsJson = JSON.stringify({
-title: "VER LISTA",
-description: "Infórmate por medios oficiales sobre GataBot",
+title: "VER COMANDOS",
+description: "Infórmate por medios oficiales sobre MichiBot",
 sections: [
 { title: "ℹ️ Información", highlight_label: "Popular",
 rows: [
-{ header: "✅ Redes", title: "🔓 Para: Todos", description: "Infórmate por medios oficiales sobre GataBot", id: usedPrefix + "cuentasgb" },
+{ header: "✅ Redes", title: "🔓 Para: Todos", description: "Infórmate por medios oficiales sobre MichiBot", id: usedPrefix + "cuentasgb" },
 { header: "📢 Grupos/Canales", title: "🔓 Para: Todos", description: "¡Te esperamos!", id: usedPrefix + "grupos" },
-{ header: "🎁 Donar", title: "🔓 Para: Todos", description: "GataBot se mantiene funcionando gracias a donaciones ¡tú también puedes sumarte apoyando el proyecto!", id: usedPrefix + "donar" }
+{ header: "💸 Comprar", title: "🔓 Para: Todos", description: "MichiBot se mantiene funcionando gracias a que lo compran, tu tambien puedes adquirirlo", id: usedPrefix + "comprar" }
 ]},
-{ title: "🔖 Atajos", highlight_label: "Popular",
+{ title: "🔖 Atajos", highlight_label: "Nuevo",
 rows: [
-{ header: "🆕 Ser Bot (código)", title: "🔓 Para: Todos", description: "¡Conviértete en Bot con el método de código de 8 dígitos!", id: usedPrefix + "serbot --code" },
-{ header: "🤖 Ser Bot (qr)", title: "🔓 Para: Todos", description: "Forma estándar de ser bot con código QR", id: usedPrefix + "serbot" },
-{ header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Seleccione esto si desea saber el ping del Bot", id: usedPrefix + "ping" },
-{ header: "😺 Estado", title: "🔓 Para: Todos", description: "Conoce en que estado se encuentra GataBot", id: usedPrefix + "estado" }
+{ header: "🎧 Youtube play", title: "🔓 Para: Todos", description: "Descarga canciones de youtube al momento", id: usedPrefix + "play" },
+{ header: "🤫 Mutear", title: "🔐 Para: Admins", description: "Silencia a alguien en el grupo(el bot le borrara todos los mensajes)", id: usedPrefix + "mute" },
+{ header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Selecciona esto si deseas saber la rapidez del bot", id: usedPrefix + "ping" },
+{ header: "🥺​ Desmutear", title: "🔐 Para: Admins", description: "Quita el silencio a alguien del grupo(ya no le borrara mensajes)", id: usedPrefix + "unmute" }
 ]},
 { title: "Ⓜ️ Menú", highlight_label: "Popular",
 rows: [
