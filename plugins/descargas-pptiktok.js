@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, args, text, command, usedPrefix }) => {
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.TikTok}\n*${usedPrefix + command} Gata_Dios*`
+if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.TikTok}\n*${usedPrefix + command} realmadrid*`
 try {
 let res = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=${lolkeysapi}`
 await conn.sendFile(m.chat, res, 'error.jpg', `✅ ${mid.TikTok1}\n💟 *${text}*`, m, false)
