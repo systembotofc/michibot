@@ -124,10 +124,10 @@ rows: [
 ]},
 { title: "🔖 Atajos", highlight_label: "Nuevo",
 rows: [
-{ header: "🤫 Mutear", title: "🔐 Para: Admins", description: "Silencia a alguien en el grupo(el bot le borrara todos los mensajes)", id: usedPrefix + "mute" },
+{ header: "🤫 Mutear", title: "🔐 Para: Admins", description: "Silencia a alguien en el grupo(el bot le borrara todos los mensajes)", id: usedPrefix + "mute2" },
 { header: "🎧 Youtube play", title: "🔓 Para: Todos", description: "Descarga canciones de youtube al momento", id: usedPrefix + "play" },
 { header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Selecciona esto si deseas saber la rapidez del bot", id: usedPrefix + "ping" },
-{ header: "🥺​ Desmutear", title: "🔐 Para: Admins", description: "Quita el silencio a alguien del grupo(ya no le borrara mensajes)", id: usedPrefix + "unmute" }
+{ header: "🥺​ Desmutear", title: "🔐 Para: Admins", description: "Quita el silencio a alguien del grupo(ya no le borrara mensajes)", id: usedPrefix + "unmute2" }
 ]},
 { title: "Ⓜ️ Menú", highlight_label: "Popular",
 rows: [
